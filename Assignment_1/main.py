@@ -30,7 +30,7 @@ def solution():
     
     #Find SSE (y-x*w)^2
     Matrix_Subtraction = Ymatrix - Xmatrix.dot(W) 
-    SSE_dummy = np.transpose(Matrix_Subtraction).dot(Matrix_Subtraction)
+    SSE_dummy = (np.transpose(Matrix_Subtraction)).dot(Matrix_Subtraction)
     print (SSE_dummy)
 
 def main ():
